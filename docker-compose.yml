@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  dbserver:
+    image: mariadb:10.7.1
+    container_name: dbserver
+    environment:
+      - MYSQL_ROOT_PASSWORD=dnJNflkvc23?sdf!N
+    volumes:
+      - ./db:/var/lib/mysql
+      - ./db_config:/etc/mysql/conf.d
+    ports:
+      - 3030:3306
