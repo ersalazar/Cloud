@@ -1,6 +1,11 @@
 <html>
     <body>
-        
+        <script>
+       if (window.location.protocol != "https:") {
+           window.location.protocol = "https:";
+           window.location.reload();
+        }
+    </script>
     <?php
 
     $connection = mysqli_connect("ls-18f4ae99f412b155369953c6da27502b1739f7bd.c1kjkkn87anu.us-east-2.rds.amazonaws.com", "dbmaster", "5kWKyzs7mRAenhRv", "ejemplo", "3036");
