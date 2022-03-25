@@ -3,7 +3,7 @@
         
     <?php
 
-    $connection = mysqli_connect("host.docker.internal", "root", "dnJNflkvc23?sdf!N", "ejemplo", "3030");
+    $connection = mysqli_connect("ls-18f4ae99f412b155369953c6da27502b1739f7bd.c1kjkkn87anu.us-east-2.rds.amazonaws.com", "dbmaster", "5kWKyzs7mRAenhRv", "ejemplo", "3036");
     if (!$connection) {
         echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
         echo "errno de depuración: " . mysqli_connect_errno() . PHP_EOL;
